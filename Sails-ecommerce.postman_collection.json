@@ -1,0 +1,419 @@
+{
+	"info": {
+		"_postman_id": "0640db00-24f8-4948-a2eb-76a0827700f5",
+		"name": "Sails-ecommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19741387"
+	},
+	"item": [
+		{
+			"name": "POST producto",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Pikachu\",\r\n  \"price\": 1000,\r\n  \"thumbnail\": \"www.google.com\",\r\n  \"carritos\":{\r\n      \r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1337/productos/create?title=Pikachu&price=1000&thumbnail=www.google.com.ar",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"productos",
+						"create"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Pikachu"
+						},
+						{
+							"key": "price",
+							"value": "1000"
+						},
+						{
+							"key": "thumbnail",
+							"value": "www.google.com.ar"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT producto  id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Pikachu\",\r\n  \"price\": 1000,\r\n  \"thumbnail\": \"www.google.com\",\r\n  \"carritos\":{\r\n      \r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1337/productos/update/6406840b47cabf11a841695f?title=Pikachu&price=2000&thumbnail=www.google.com.ar",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"productos",
+						"update",
+						"6406840b47cabf11a841695f"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Pikachu"
+						},
+						{
+							"key": "price",
+							"value": "2000"
+						},
+						{
+							"key": "thumbnail",
+							"value": "www.google.com.ar"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE producto id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Pikachu\",\r\n  \"price\": 1000,\r\n  \"thumbnail\": \"www.google.com\",\r\n  \"carritos\":{\r\n      \r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1337/productos/destroy/6406840b47cabf11a841695f",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"productos",
+						"destroy",
+						"6406840b47cabf11a841695f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET productos getall",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Pikachu\",\r\n  \"price\": 1000,\r\n  \"thumbnail\": \"www.google.com\",\r\n  \"carritos\":{\r\n      \r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1337/productos/find",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"productos",
+						"find"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET productos find id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Pikachu\",\r\n  \"price\": 1000,\r\n  \"thumbnail\": \"www.google.com\",\r\n  \"carritos\":{\r\n      \r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1337/productos/find/6406840b47cabf11a841695f",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"productos",
+						"find",
+						"6406840b47cabf11a841695f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST usuarios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"nes@gmail.com\",\r\n  \"password\": 1234,\r\n  \"nombre\": \"Nes\",\r\n   \"edad\": 30,\r\n    \"telefono\": \"12312412412\",\r\n     \"fotoUrl\": \"www.google.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1337/users/create?email=nes@gmail.com&password=1234&nombre=nes&edad=30&telefono=123141241&fotoUrl=www.google.com.ar",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"users",
+						"create"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "nes@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "1234"
+						},
+						{
+							"key": "nombre",
+							"value": "nes"
+						},
+						{
+							"key": "edad",
+							"value": "30"
+						},
+						{
+							"key": "telefono",
+							"value": "123141241"
+						},
+						{
+							"key": "fotoUrl",
+							"value": "www.google.com.ar"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET usuarios getall",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"nes@gmail.com\",\r\n  \"password\": 1234,\r\n  \"nombre\": \"Nes\",\r\n   \"edad\": 30,\r\n    \"telefono\": \"12312412412\",\r\n     \"fotoUrl\": \"www.google.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1337/users/find",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"users",
+						"find"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET usuarios find id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"nes@gmail.com\",\r\n  \"password\": 1234,\r\n  \"nombre\": \"Nes\",\r\n   \"edad\": 30,\r\n    \"telefono\": \"12312412412\",\r\n     \"fotoUrl\": \"www.google.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1337/users/find/640684ff47cabf11a8416960",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"users",
+						"find",
+						"640684ff47cabf11a8416960"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST carrito",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userid\": \"6406787eda0e095c1c008b1b\",\r\n  \"productos\": \"640677a3da0e095c1c008b1a\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1337/carritos/create?userid=640684ff47cabf11a8416960&productos=6406859447cabf11a8416964",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"carritos",
+						"create"
+					],
+					"query": [
+						{
+							"key": "userid",
+							"value": "640684ff47cabf11a8416960"
+						},
+						{
+							"key": "productos",
+							"value": "6406859447cabf11a8416964"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST carrito Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userid\": \"6406787eda0e095c1c008b1b\",\r\n  \"productos\": \"640677a3da0e095c1c008b1a\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1337/carritos/find",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"carritos",
+						"find"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Pikachu\",\r\n  \"price\": 1000,\r\n  \"thumbnail\": \"www.google.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1337/productos/find",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"productos",
+						"find"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
